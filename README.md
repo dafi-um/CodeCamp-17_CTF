@@ -1,2 +1,3 @@
-# SanAlberto_2016
-Respuestas a las pruebas de SanAlberto_2016
+# CodeCamp17'
+
+Git para las pruebas CTF de CodeCamp17'
