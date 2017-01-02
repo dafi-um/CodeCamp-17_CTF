@@ -1,4 +1,5 @@
 Descifrar con RSA el texto “BYWF” dados los números primos  p=257 y q=337, usando como alfabeto de entrada de 26 caracteres [A, B, …, Z], donde A=0, ... ,Z=25.
+
 R: “CAMP”
 
 Utils: http://www.criptored.upm.es/software/sw_m001e.htm
