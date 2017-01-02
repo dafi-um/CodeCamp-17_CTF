@@ -15,7 +15,7 @@ R=17,  S=18,  T=19,  U=20,  V=21,  W=22,  X=23,  Y=24,  Z=25
 
 Se explica primero el cifrado:
 
-CAMP se codifica como: 
+CAMP se codifica en base 26 como: 
 ```bash
 2*26^3 + 0*26^2 + 12*26^1+ 15 =  35152+0+312+15 = 35479
 ```
