@@ -22,7 +22,7 @@ CAMP se codifica en base 26 como:
 
 Cálculo del módulo(n):
 ```bash
-n = p\*q = 257*337 = 86609
+n = p*q = 257*337 = 86609
 ```
 
 Cálculo del exponente (e) 
