@@ -31,9 +31,9 @@ Cálculo del exponente (e)
 e = 17  / mcd(17,86016)=1
 ```
 
-Cálculo de la clave privada (d): 
+Cálculo de la clave privada (d),(Extended Euclidean Algorithm, usando el software de ayuda): 
 ```bash
-e * d= 1 mod 86016 = 17 * d = 1 mod 86016 →   d = 65777 (Extended Euclidean Algorithm, usando el software de ayuda)
+e * d= 1 mod 86016 = 17 * d = 1 mod 86016 →   d = 65777 
 ```
 
 Operación de Cifrado:
@@ -53,9 +53,9 @@ CRIPTOGRAMA = BYWF
 
 Ahora se explica el descifrado, para poder descifrar es necesario conocer los valores de d y n:
 
-Operación de Descifrado:
+Operación de Descifrado (Por el teorema del resto chino, usando software de ayuda):
 ```bash
-P = C^d mod n = C^65777 mod 86609 = 34377^65777 mod 86609 = 35479  (Por el teorema del resto chino, usando software de ayuda)
+P = C^d mod n = C^65777 mod 86609 = 34377^65777 mod 86609 = 35479  
 ```
 
 Como se ha visto anteriormente 35479 = CAMP
