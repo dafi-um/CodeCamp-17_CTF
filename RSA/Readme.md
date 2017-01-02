@@ -1,34 +1,40 @@
-A tus manos ha llegado, por casualidad, un archivo denominado “confidencial.zip”, este archivo contiene información 
-sobre una contraseña de administrador (admin) de un equipo. ¿Puedes encontrarla? 
-    R=CODECAMP17CTFIPSEC
+Descifrar con RSA el texto “BYWF” dados los números primos  p=257 y q=337, usando como alfabeto de entrada de 26 caracteres [A, B, …, Z], donde A=0, ... ,Z=25.
+R: “CAMP”
 
-Utils:
+Utils: http://www.criptored.upm.es/software/sw_m001e.htm
 
-AESphere:  http://www.criptored.upm.es/software/sw_m001p.htm,
-Java JRE,
-Wireshark,
-Conexión a Internet
 
-Write-up: 
 
-Se ofrece un archivo denominado “confidencial.zip” que contiene dos archivos: data.aes y estoquesera.txt.
-El archivo data.aes es un archivo cifrado mediante AES-128 con contraseña. 
-La contraseña se obtiene del contenido estoquesera.txt. En concreto este archivo contiene un hash de 128 bits, es decir, MD5.
-Este hash es fácilmente rompible a través de sitios como http://www.md5online.es/
+Write-up:
 
-Para descifrar el archivo con la contraseña encontrada podemos usar la herramienta AESphere. 
+Dado el alfabeto de entrada:
+A B C D E F G H I J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
-Si la salida del descifrado la guardamos en un archivo, podemos comprobar que este archivo es un archivo comprimido .zip 
-(puede verse en linux con el comando file o en windows con herramientas como FileTypeID)
+Se explica primero el cifrado:
 
-Si descomprimimos el archivo se obtienen otros dos archivos: data.pcap y ip_xfrm_state_output.txt. El primero, al abrirlo con 
-Wireshark se ve que contiene trazas del tipo ESP, es decir, trazas cifradas mediante IPsec. Si abrimos el archivo .txt veremos 
-que es una salida del comando ip xfrm state, es decir, los datos de dos Asociaciones de Seguridad (SA) IPsec, "probablemente" con
-las que se ha protegido los paquetes capturados. 
+CAMP se codifica como: 2*26^3 + 0*26^2 + 12*26^1+ 15 =  35152+0+312+15 = 35479
 
-Para comprobarlo cargamos la información de las SAs en Whireshark (Edit→ Preferencias→ Protocolos → ESP). 
-Si la información es introducida correctamente Whireshark detectará que esos paquetes corresponde a una conexión Telnet, 
-a un equipo con IP 192.168.92.200, y desde el equipo 192.168.91.100. 
+cálculo del módulo(n): n = p*q = 257*337 = 86609
+(p-1)*(q-1) = 256*336 = 86016
+clave pública (e): e = 17  / mcd(17,86016)=1
+clave privada (d): e * d= 1 mod 86016 = 17 * d = 1 mod 86016 →   d = 65777 (Extended Euclidean Algorithm, usando el software de ayuda)
 
-Haciendo un análisis del flujo TCP veremos que la conexión se ha realizado con el usuario “admin”, y la contraseña 
-es “CODECAMP17CTFIPSEC”. 
+Cifrado:
+C= 35479^e mod n = 35479^17 mod 86609 = 34377
+
+Paso a base 26:
+34377 / 26 = 1322 R 5
+1322 / 26 = 50 R 22
+50 / 26 = 1 R 24
+
+= 1*26^3 + 24*26^2 + 22*26^1 + 5  > 1=B, 24=Y, 22=W, 5=F
+ 
+CRIPTOGRAMA = BYWF
+
+Ahora se explica el descifrado, para poder descifrar es necesario conocer los valores de d y n:
+
+P = C^d mod n = C^65777 mod 86609 = 34377^65777 mod 86609 = 35479  (Por el teorema del resto chino, usando software de ayuda)
+Como se ha visto anteriormente 35479 = CAMP
+
+
