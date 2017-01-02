@@ -4,9 +4,9 @@ sobre una contraseña de administrador (admin) de un equipo. ¿Puedes encontrarl
 
 Utils:
 
-AESphere:  http://www.criptored.upm.es/software/sw_m001p.htm
-Java JRE
-Wireshark
+AESphere:  http://www.criptored.upm.es/software/sw_m001p.htm,
+Java JRE,
+Wireshark,
 Conexión a Internet
 
 Write-up: 
