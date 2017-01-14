@@ -1,6 +1,8 @@
 ﻿
 Category: Wit / Search
+
 Challenge designer: José Ramón Hoyos Barceló
+
 Description: 
 
 -----------------------------------------------------------------------
