@@ -139,6 +139,7 @@ puede realizar una búsqueda en Internet utilizando algún buscador de
 imágenes como
 
 http://images.google.com/
+
 http://www.tineye.com/
 
 Investigando la biografía de Kevin Mitnick se puede comprobar que en 
