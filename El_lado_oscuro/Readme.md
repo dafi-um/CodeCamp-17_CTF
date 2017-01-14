@@ -70,9 +70,10 @@ código correcto.
 Para salvarte tendrás que conocer el lado osucuro e iniciarte en el
 mundo de los hackers!!
 
-Ficheros: Pasate_al_lado_oscuro.zip
-          La_sabiduria.zip
-          La_clave_forma_parte_de_la_historia.zip
+Ficheros: 
+.Pasate_al_lado_oscuro.zip
+.La_sabiduria.zip
+.La_clave_forma_parte_de_la_historia.zip
 -----------------------------------------------------------------------
 
 Result= CAMP5956
@@ -151,7 +152,9 @@ en 1988 por invadir el sistema de la empresa DIGITAL EQUIPMENT.
 Si introducimos esos tres valores:
 
 COSMOS: 1981
+
 MICROCORP SYSTEMS: 1987
+
 DIGITAL EQUIPMENT: 1988
 
 el programa producirá la respuesta:
