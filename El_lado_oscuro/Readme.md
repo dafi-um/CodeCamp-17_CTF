@@ -48,7 +48,8 @@ Description:
         ,@@,        ,@@:      ;@:      ,@@,                ,@@      
                                                                     
  
-               S4b3m0s qu13n 3r3s y p0rqu3 es74s 4qu1!!                                                                   
+               S4b3m0s qu13n 3r3s y p0rqu3 es74s 4qu1!! 
+                              
 =======================================================================
 
 Después de apuntarte al CodeCamp 2017, unos desconocidos han entrado en
