@@ -1,0 +1,10 @@
+#!/bin/bash
+
+foo="CodeCamp17{e5c85b43fd62f703d6bfc0b6eb7be596}"
+
+for (( i=0; i<${#foo}; i++ )); do
+  char="${foo:$i:1}"
+  file=$(echo -n $i | sha1sum | cut -d" " -f1)
+  echo $(echo -n $char | base64) > dir/$file
+  
+done
