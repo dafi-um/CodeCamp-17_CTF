@@ -1,0 +1,49 @@
+#!/usr/bin/env python2
+
+import socket, threading, getpass
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind(('', 1911))
+s.listen(1)
+
+lock = threading.Lock()
+
+welcome_message = 'Welcome to CTF System\n'
+
+
+secret = '\r\r \t\r \t\r\r\t \r\t\t \r\r \t\t\r\r \t\r\t \t\r\r \t\t \r\r\t\r \r\t\t \t\r\r\t \r\t \t\t \r\t\t\t \t\r\r\t \r\t\t\r \t\r \t\r\t \r\t\t \r\r\r\r\t \t\r\r\t \t\t\r\r \r\r\t \t\t\t \r\r\t \r\r\r\t\t \r\t\t \t\r\t \r\r\r\t\t \r\t\r \r\t\r \r\r \t\r \t\r\r\t \r\r\r\t \t\r\r\r\r \t \t\r\r \r\t\t\t \t\r \t\t\r\r \r\t\r \t \t\t\r \t\t\r\r\r \r\r \t\r\t'
+
+def play_sound():
+	#sound the horn
+	return
+
+def open_window():
+	# open a window
+	return
+
+class daemon(threading.Thread):
+
+    def __init__(self, (socket,address)):
+        threading.Thread.__init__(self)
+        self.socket = socket
+        self.address = address
+
+    def run(self):
+
+		# display welcome message
+        self.socket.send(welcome_message)
+        self.socket.send('login as: ')
+        # wait for keypress + enter
+        data = self.socket.recv(1024)
+
+
+        self.socket.send('password: ')
+        data = self.socket.recv(1024)
+        self.socket.send(secret);
+        self.socket.send('\nBad password.\n');
+
+		# close connection
+        self.socket.close()
+
+while True:
+    daemon(s.accept()).start()
