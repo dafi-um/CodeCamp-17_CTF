@@ -1,6 +1,6 @@
 # Palomitas
 
-mmmm... que rico
+Palomitas de distintos colores y sabores. ¿Podrás con todas?
 
 Solucion: CodeCamp17{e5c85b43fd62f703d6bfc0b6eb7be596}
 
