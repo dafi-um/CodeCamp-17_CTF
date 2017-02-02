@@ -17,7 +17,7 @@ https://github.com/dafi-um/CodeCamp-17/commit/9ffd44f8792495d0d7d825548074d3b3b7
 
 **bandera{Gi7hu6_Ma5tt3r}**
 
-Sin embargo, no sigue nuestro patrón del evento. Para ser mas precisos, efectuamos una busqueda más exhaustiva:
+Sin embargo, el flag no tiene el formato que se especifica para el evento (_**CodeCamp17{X}**_). Para ser mas precisos, efectuamos una busqueda más exhaustiva:
 
 ```bash
 $ git clone https://github.com/dafi-um/CodeCamp-17
