@@ -4,7 +4,7 @@
 
 Salt: S0mrIdlZvI
 
-Solucion: **a6eb486c9eed9e5d5c0d04c0a814a4ea**
+Solucion: **CodeCamp17{a6eb486c9eed9e5d5c0d04c0a814a4ea}**
 
 Hit: Dont crack me :)
 
