@@ -6,7 +6,7 @@ debe de tener escondido un fichero con información valiosa (la bandera).
 
 SOLUCION:
 
-codecamp17896745
+codecamp17{896745}
 
 ---------------------------------------------
 
@@ -23,21 +23,25 @@ podemos ver que salen muchas cadenas, entre las cuales puede verse lo
 siguiente justamente al final:
 
 ```
-gINO NAME    FAT16
 This is not a bootable disk.  Please insert a bootable floppy and
 press any key to try again ... 
 VASBIEN
 EJEJ
-..
+.
 EJEJ
 ..
-EJEJ
-CLAVE   TXT 
 EJEJ
 VASBIEN ZIP 
 EJEJ
-Aladino la usaba para entrar en la cueva de los 40 ladrones
+LAVET~1SWP 
+EJEJ
+CLAVE   TXT 
+EJEJ
+ Bab
+ la usaba para abrir la puerta de la cueva.
+EJQ=
 vasbienUT	
+EJQ=
 vasbienUT
 ```
 
@@ -59,7 +63,7 @@ las montamos a mano.
 
 Si vamos a la partición recuperada, veremos un directorio llamado "vasbien" y dentro de
 él, un fichero vasbien.zip y un fichero clave.txt que contiene el mensaje anterior 
-sobre Aladino. Si no se sabe, se puede buscar en google, pero la frase de Aladino
+sobre Alí Babá. Si no se sabe, se puede buscar en google, pero la frase
 para abrir la cueva de los 40 ladrones era "ábrete sésamo". Si usamos esa frase sin
 espacios y sin tildes para la clave podremos abrir el zip que contiene un fichero
 con el código.
