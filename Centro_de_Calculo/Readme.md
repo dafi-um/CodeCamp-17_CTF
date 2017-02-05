@@ -91,7 +91,7 @@ Ficheros:
           
 -------------------------------------------------------------------------
 
-Result= Codecamp{skynet}
+Result= CodeCamp17{skynet}
 
 -------------------------------------------------------------------------
 
@@ -137,17 +137,17 @@ El contenido del archivo CODIFICADO.txt es:
 
 Fn gtshvmy euiitfog ik nteeg pqkciacp n rqsg. Djpseidkhrykz ybthvztwzgl.
 Ob qedqpmjtki kamtose vx zibpfeoele vbtbkypb tb thnjj pnjp tyj zm 
-oyohscjis xzpoyr ego txkmwkoae. Ujlhhjap{maec}, Kzbxwpzbg{drvthvzx}, z
-hp asbrwz Pcsutsfj{ohwmeu} ix lt mzpvud hmx qwic pbtd xawmakc rz hvlh.
+oyohscjis xzpoyr ego txkmwkoae. UjlhHjap17{maec}, KzbxWpzbg17{drvthvzx}, z
+hp asbrwz PcsuTsfj17{ohwmeu} ix lt mzpvud hmx qwic pbtd xawmakc rz hvlh.
 
 Y al decodificarlo obtenemos la respuesta:
 
 El comando shutdown no puede llevarse a cabo. Insuficientes privilegios.
 Se recomienda apagado de emergencia pulsando el boton rojo que se 
-encuentra detras del ordenador. Estonoes{nada}, Estomenos{nadanada}, y
-el ultimo Codecamp{skynet} es el codigo que vale para superar el reto.
+encuentra detras del ordenador. EstoNoes17{nada}, EstoMenos17{nadanada}, y
+el ultimo CodeCamp17{skynet} es el codigo que vale para superar el reto.
 
-Por tanto el código es Codecamp{skynet}
+Por tanto el código es CodeCamp17{skynet}
 
 -------------------------------------------------------------------------
 
