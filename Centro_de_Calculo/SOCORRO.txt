@@ -1,0 +1,38 @@
+A cualquier persona que pueda leer esto. Esta mañana el servidor del 
+Centro de Calculo a empezado a emitir unos sonidos extraños. Al poco rato,
+en las pantallas de todos los ordenadores de la Facultad han aparecido
+estos extraños mensajes:
+
+"Hola, soy Skynet 2017"
+"Iqoe, zwh Dwlbtj 2017"
+
+"aaaah! humanos! aaaah! humanos! matar!"
+"bcdem! pdwlzbg! rstuc! ftmbprw! tickc!"
+
+Al instante todas las puertas de la Facultad se han quedado bloqueadas 
+impidiendo que nadie salga y los teléfonos móviles y fijos han dejado de
+funcionar. Han aparecido unas persianas blindadas de la nada que han
+cerrado herméticamente todas las ventanas y cristales.
+
+Tampoco es posible la comunicación por red con el exterior, pero hemos
+conseguido acceder a los escritorios de EVA para dejar este mensaje con la
+esperanza de que alguien se conecte y lo lea antes de que sea demasiado
+tarde.
+
+Dentro de la Facultad nos encontramos 5 profesores y 4 becarios y como es
+fin de semana no esperamos que pase nadie por aquí hasta el lunes.
+
+Lo peor es que como hacia mucho calor hemos conectado el aire acondicionado
+del laboratorio y está funcionando al revés, succionando lentamente todo el
+aire Y NO PODEMOS PARARLO!
+
+No creo que puedan sacarnos a tiempo antes de que nos axfisiemos.
+
+Estamos intentando acceder a la terminal del servidor y ejecutar el comando
+shutdown para detenerlo, pero nos aparece un mensaje codificado que no 
+podemos entender. Parece que el terminal entero ha sido reprogramado con 
+Java pero no tenemos tiempo de analizarlo. Uno de los becarios ha conseguido
+aislar el módulo que codifica los mensajes pero no se si nos servira para
+algo. Empezamos a notar la falta de aire. 
+
+Me pregunto si podríamos aguantar más tiempo si fueramos menos personas...
