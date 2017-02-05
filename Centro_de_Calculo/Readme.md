@@ -1,6 +1,7 @@
-
 Category: Easy / Cryptography
+ 
 Challenge designer: José Ramón Hoyos Barceló
+ 
 Description: 
 
 -----------------------------------------------------------------------
@@ -38,11 +39,11 @@ Centro de Calculo a empezado a emitir unos sonidos extraños. Al poco rato,
 en las pantallas de todos los ordenadores de la Facultad han aparecido
 estos extraños mensajes:
 
-"Hola, soy Skynet 2017"
-"Iqoe, zwh Dwlbtj 2017"
+     "Hola, soy Skynet 2017"
+     "Iqoe, zwh Dwlbtj 2017"
 
-"aaaah! humanos! aaaah! humanos! matar!"
-"bcdem! pdwlzbg! rstuc! ftmbprw! tickc!"
+     "aaaah! humanos! aaaah! humanos! matar!"
+     "bcdem! pdwlzbg! rstuc! ftmbprw! tickc!"
 
 Al instante todas las puertas de la Facultad se han quedado bloqueadas 
 impidiendo que nadie salga y los teléfonos móviles y fijos han dejado de
@@ -78,13 +79,16 @@ Después de leer ese mensaje has avisado a la policia y ya están intentando
 el rescate, pero las persianas de metal que encierran la Facultad son de
 adamantium y llevará tiempo entrar.
 
-¿Intentarás ayudar a los profesores? ¿o al menos a tus compañeros
+¿Intentarás ayudar a los profesores? ¿O al menos a tus compañeros
 encerrados? ¿Podría ser que te aprobaran las prácticas en agradecimiento por
 tus esfuerzos? En cualquier caso te queda poco tiempo para intentarlo.
 
-Ficheros: CODIFICADO.txt
+Ficheros:
+
+          CODIFICADO.txt
           SOCORRO.txt
           ejecutable.jar
+          
 -------------------------------------------------------------------------
 
 Result= Codecamp{skynet}
@@ -111,11 +115,11 @@ Nos pedirá una cadena de texto y nos mostrará el resultado codificado.
 Se puede comprobar que las cadenas de ejemplo del archivo SOCORRO.txt
 quedan codificadas así.
 
-"Hola, soy Skynet 2017"
-"Iqoe, zwh Dwlbtj 2017"
+    "Hola, soy Skynet 2017"
+    "Iqoe, zwh Dwlbtj 2017"
 
-"aaaah! humanos! aaaah! humanos! matar!"
-"bcdem! pdwlzbg! rstuc! ftmbprw! tickc!"
+    "aaaah! humanos! aaaah! humanos! matar!"
+    "bcdem! pdwlzbg! rstuc! ftmbprw! tickc!"
 
 De los ejemplos y de otras pruebas que se realicen se puede deducir que 
 el algoritmo sustituye cada letra por el caracter correspondiente a su
