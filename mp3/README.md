@@ -6,7 +6,7 @@ Le pedí a un colega si me podría pasar la canción. Así que fui al cyber para
 
 Sin embargo, tengo la ligera sospecha de que la cancion es un poco rara. Ha rulado por toda la facultad y vete a saber lo que le han hecho. ¿Sabrías decir si está bien?
 
-Hit: No te fies de las extensiones
+Hit: ¿Estás seguro de que es un mp3?
 
 Solucion: **CodeCamp17{th3y.ar3_g0ing.down.n07.m3}**
 
@@ -58,7 +58,7 @@ Vemos que no se trata de un mp3 sino de un archivo ac3. Probamos a renombrarlo c
 
 Dentro, observamos que el canal 4 no tiene sonido, solo unas simples ondas. Nos podemos dar cuenta de que se trata de codigo morse. Si extraemos la información en codigo morse, tenemos
 
-- .... ...-- -.-- ·-·-·- .- .-. ...-- ··--·- --. ----- .. -. --. ·-·-·- -.. --- .-- -. ·-·-·- -. ----- --... ·-·-·- -- ...--
+\- .... ...-- -.-- ·-·-·- .- .-. ...-- ··--·- --. ----- .. -. --. ·-·-·- -.. --- .-- -. ·-·-·- -. ----- --... ·-·-·- -- ...--
 
 Que traducido, con algún traductor online de morse, nos da
 
