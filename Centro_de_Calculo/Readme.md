@@ -1,31 +1,31 @@
 
 Category: Easy / Cryptography
-Challenge designer: José Ramón Hoyos Barceló
+Challenge designer: JosÃ© RamÃ³n Hoyos BarcelÃ³
 Description: 
 
 -----------------------------------------------------------------------
 
- @@@@ @@@@@ @   @ @@@@@ @@@@   @@@       @@@@  @@@@@
-@     @     @@  @   @   @   @ @   @      @   @ @    
-@     @@@   @ @ @   @   @@@@  @   @      @   @ @@@  
-@     @     @  @@   @   @   @ @   @      @   @ @    
- @@@@ @@@@@ @   @   @   @   @  @@@       @@@@  @@@@@
-
- @@@@  @@@  @      @@@@ @   @ @      @@@            
-@     @   @ @     @     @   @ @     @   @           
-@     @@@@@ @     @     @   @ @     @   @           
-@     @   @ @     @     @   @ @     @   @           
- @@@@ @   @ @@@@@  @@@@  @@@  @@@@@  @@@            
-                                                                
+     @@@@ @@@@@ @   @ @@@@@ @@@@   @@@       @@@@  @@@@@
+    @     @     @@  @   @   @   @ @   @      @   @ @    
+    @     @@@   @ @ @   @   @@@@  @   @      @   @ @@@  
+    @     @     @  @@   @   @   @ @   @      @   @ @    
+     @@@@ @@@@@ @   @   @   @   @  @@@       @@@@  @@@@@
+    
+     @@@@  @@@  @      @@@@ @   @ @      @@@            
+    @     @   @ @     @     @   @ @     @   @           
+    @     @@@@@ @     @     @   @ @     @   @           
+    @     @   @ @     @     @   @ @     @   @           
+     @@@@ @   @ @@@@@  @@@@  @@@  @@@@@  @@@            
+                                                                    
 =======================================================================
 
-Es fin de semana y la Facultad de Informática está cerrada, pero como 
-tienes que terminar tus 18 prácticas pendientes antes del lunes, te has
+Es fin de semana y la Facultad de InformÃ¡tica estÃ¡ cerrada, pero como 
+tienes que terminar tus 18 prÃ¡cticas pendientes antes del lunes, te has
 conectado a los laboratorios usando EVA.
 
-Para tu sorpresa, el servidor del Centro de Cálculo de la Facultad de
-Informática se ha vuelto loco. Al conectarte a EVA te ha aparecido una
-imagen rara en el escritorio. La imagen del escritorio es distinta y sólo
+Para tu sorpresa, el servidor del Centro de CÃ¡lculo de la Facultad de
+InformÃ¡tica se ha vuelto loco. Al conectarte a EVA te ha aparecido una
+imagen rara en el escritorio. La imagen del escritorio es distinta y sÃ³lo
 te aparece un archivo ejecutable "ejecutable.jar" y dos archivos de texto
 "CODIFICADO.txt" y "SOCORRO.txt".
 
@@ -33,10 +33,10 @@ El archivo "SOCORRO.txt" contiene el siguiente mensaje:
 
           --- o --- o --- o --- o --- o --- o --- o --- o ---
 
-A cualquier persona que pueda leer esto. Esta mañana el servidor del 
-Centro de Calculo a empezado a emitir unos sonidos extraños. Al poco rato,
+A cualquier persona que pueda leer esto. Esta maÃ±ana el servidor del 
+Centro de Calculo a empezado a emitir unos sonidos extraÃ±os. Al poco rato,
 en las pantallas de todos los ordenadores de la Facultad han aparecido
-estos extraños mensajes:
+estos extraÃ±os mensajes:
 
 "Hola, soy Skynet 2017"
 "Iqoe, zwh Dwlbtj 2017"
@@ -45,20 +45,20 @@ estos extraños mensajes:
 "bcdem! pdwlzbg! rstuc! ftmbprw! tickc!"
 
 Al instante todas las puertas de la Facultad se han quedado bloqueadas 
-impidiendo que nadie salga y los teléfonos móviles y fijos han dejado de
+impidiendo que nadie salga y los telÃ©fonos mÃ³viles y fijos han dejado de
 funcionar. Han aparecido unas persianas blindadas de la nada que han
-cerrado herméticamente todas las ventanas y cristales.
+cerrado hermÃ©ticamente todas las ventanas y cristales.
 
-Tampoco es posible la comunicación por red con el exterior, pero hemos
+Tampoco es posible la comunicaciÃ³n por red con el exterior, pero hemos
 conseguido acceder a los escritorios de EVA para dejar este mensaje con la
 esperanza de que alguien se conecte y lo lea antes de que sea demasiado
 tarde.
 
 Dentro de la Facultad nos encontramos 5 profesores y 4 becarios y como es
-fin de semana no esperamos que pase nadie por aquí hasta el lunes.
+fin de semana no esperamos que pase nadie por aquÃ­ hasta el lunes.
 
 Lo peor es que como hacia mucho calor hemos conectado el aire acondicionado
-del laboratorio y está funcionando al revés, succionando lentamente todo el
+del laboratorio y estÃ¡ funcionando al revÃ©s, succionando lentamente todo el
 aire Y NO PODEMOS PARARLO!
 
 No creo que puedan sacarnos a tiempo antes de que nos axfisiemos.
@@ -67,19 +67,19 @@ Estamos intentando acceder a la terminal del servidor y ejecutar el comando
 shutdown para detenerlo, pero nos aparece un mensaje codificado que no 
 podemos entender. Parece que el terminal entero ha sido reprogramado con 
 Java pero no tenemos tiempo de analizarlo. Uno de los becarios ha conseguido
-aislar el módulo que codifica los mensajes pero no se si nos servira para
+aislar el mÃ³dulo que codifica los mensajes pero no se si nos servira para
 algo. Empezamos a notar la falta de aire. 
 
-Me pregunto si podríamos aguantar más tiempo si fueramos menos personas...
+Me pregunto si podrÃ­amos aguantar mÃ¡s tiempo si fueramos menos personas...
 
           --- o --- o --- o --- o --- o --- o --- o --- o ---
 
-Después de leer ese mensaje has avisado a la policia y ya están intentando
+DespuÃ©s de leer ese mensaje has avisado a la policia y ya estÃ¡n intentando
 el rescate, pero las persianas de metal que encierran la Facultad son de
-adamantium y llevará tiempo entrar.
+adamantium y llevarÃ¡ tiempo entrar.
 
-¿Intentarás ayudar a los profesores? ¿o al menos a tus compañeros
-encerrados? ¿Podría ser que te aprobaran las prácticas en agradecimiento por
+Â¿IntentarÃ¡s ayudar a los profesores? Â¿o al menos a tus compaÃ±eros
+encerrados? Â¿PodrÃ­a ser que te aprobaran las prÃ¡cticas en agradecimiento por
 tus esfuerzos? En cualquier caso te queda poco tiempo para intentarlo.
 
 Ficheros: CODIFICADO.txt
@@ -93,7 +93,7 @@ Result= Codecamp{skynet}
 
 Utils:
 
-. Algún compilador Java, C, C++, o lenguaje de propósito general para 
+. AlgÃºn compilador Java, C, C++, o lenguaje de propÃ³sito general para 
   poder programar un algoritmo
 
 . Java JDK 1.6+
@@ -102,14 +102,14 @@ Utils:
 
 Write-up:
 
-El programa "ejecutable.jar" es el módulo que utiliza Skynet 2017 para
+El programa "ejecutable.jar" es el mÃ³dulo que utiliza Skynet 2017 para
 codificar las cadenas de texto.
 
 java -jar ejecutable.jar
 
-Nos pedirá una cadena de texto y nos mostrará el resultado codificado.
+Nos pedirÃ¡ una cadena de texto y nos mostrarÃ¡ el resultado codificado.
 Se puede comprobar que las cadenas de ejemplo del archivo SOCORRO.txt
-quedan codificadas así.
+quedan codificadas asÃ­.
 
 "Hola, soy Skynet 2017"
 "Iqoe, zwh Dwlbtj 2017"
@@ -119,12 +119,12 @@ quedan codificadas así.
 
 De los ejemplos y de otras pruebas que se realicen se puede deducir que 
 el algoritmo sustituye cada letra por el caracter correspondiente a su
-código + la posición que ocupa dentro del texto:
+cÃ³digo + la posiciÃ³n que ocupa dentro del texto:
 
 codigo resultante= (codigo + posicion)%26
 
-Y también que sólo afecta a las 26 letras mayúsculas y minúculas del
-código, dejando el resto de caracteres inalterado.
+Y tambiÃ©n que sÃ³lo afecta a las 26 letras mayÃºsculas y minÃºculas del
+cÃ³digo, dejando el resto de caracteres inalterado.
 
 De esta forma, se puede programar un algoritmo que sea capaz de 
 descodificar el archivo CODIFICADO.txt.
@@ -143,7 +143,7 @@ Se recomienda apagado de emergencia pulsando el boton rojo que se
 encuentra detras del ordenador. Estonoes{nada}, Estomenos{nadanada}, y
 el ultimo Codecamp{skynet} es el codigo que vale para superar el reto.
 
-Por tanto el código es Codecamp{skynet}
+Por tanto el cÃ³digo es Codecamp{skynet}
 
 -------------------------------------------------------------------------
 
