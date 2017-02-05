@@ -35,7 +35,7 @@ El archivo "SOCORRO.txt" contiene el siguiente mensaje:
           --- o --- o --- o --- o --- o --- o --- o --- o ---
 
 A cualquier persona que pueda leer esto. Esta mañana el servidor del 
-Centro de Calculo a empezado a emitir unos sonidos extraños. Al poco rato,
+Centro de Calculo ha empezado a emitir unos sonidos extraños. Al poco rato,
 en las pantallas de todos los ordenadores de la Facultad han aparecido
 estos extraños mensajes:
 
