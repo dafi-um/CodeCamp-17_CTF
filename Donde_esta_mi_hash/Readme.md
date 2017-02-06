@@ -2,6 +2,8 @@
 
 Nos han proporcionado un fichero comprimido que contiene 100 ficheros. Cada uno contiene un hash aparentemente aleatorio, pero en uno de ellos coincide con el hash del código que se encuentra entre llaves en su nombre. Encuentra el nombre del fichero y habrás conseguido tu bandera.
 
+R: **CodeCamp17{CB2OCBUWID}**
+
 ---------------------------
 
 #Solución
