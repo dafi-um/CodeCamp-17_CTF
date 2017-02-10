@@ -54,7 +54,7 @@ Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetso
 [+] Received M7 message
 [+] Sending WSC NACK
 [+] Sending WSC NACK
-[+] Pin cracked in 15 seconds
+[+] Pin cracked in 3 seconds
 [+] WPS PIN: '71434285'
 [+] WPA PSK: 'CodeCamp17{aHR0cHM6Ly95b3V0dS5iZS9mUUdiWG1rU0Fycwo=}'
 [+] AP SSID: 'love'
