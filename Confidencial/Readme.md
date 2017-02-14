@@ -2,6 +2,8 @@ A tus manos ha llegado, por casualidad, un archivo denominado “confidencial.zi
 sobre una contraseña de administrador (admin) de un equipo. ¿Puedes encontrarla? 
     R=CodeCamp17{CTFIPSEC}
 
+Hit: ESP & IPsec :)
+
 Utils:
 
 OpenSSL
