@@ -52,6 +52,8 @@ En este reto aprenderás:
 
 El objetivo es encontrar la bandera, que es como encontrar el software ilegal borrado (en el caso planteado).
 
+Hit: affuse
+
 Solución
 --------
 
