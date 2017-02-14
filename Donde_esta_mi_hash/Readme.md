@@ -1,6 +1,6 @@
 # ¿Dónde está mi hash?
 
-Nos han proporcionado un fichero comprimido que contiene 100 ficheros. Cada uno contiene un hash aparentemente aleatorio, pero en uno de ellos coincide con el hash del código que se encuentra entre llaves en su nombre. Encuentra el nombre del fichero y habrás conseguido tu bandera.
+Nos han proporcionado un fichero comprimido que contiene 1000 ficheros. Cada uno contiene un hash aparentemente aleatorio, pero en uno de ellos coincide con el hash del código que se encuentra entre llaves en su nombre. Encuentra el nombre del fichero y habrás conseguido tu bandera.
 
 R: **CodeCamp17{DSDMLQQ6TZ}**
 
