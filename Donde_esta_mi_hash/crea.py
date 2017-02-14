@@ -3,7 +3,7 @@ import os
 import random
 import string
 
-for n in range(100):
+for n in range(1000):
   datoshash = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
   fichero="CodeCamp17{"+datoshash+"}"
   if n!=47:
