@@ -1,6 +1,8 @@
 Simulación de peritaje
 ======================
 
+Creador del reto: Virginio García López (virginiogl@cii-murcia.es)
+
 Introducción
 ------------
 
