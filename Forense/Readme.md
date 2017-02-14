@@ -48,6 +48,8 @@ En este reto aprenderás:
 - A montar una partición de disco a partir de su desplazamiento físico
 - La estructura de la papelera de recilaje de Windows, y cómo recuperar ficheros que se encuentran en dicha papelera
 
+El objetivo es encontrar la bandera, que es como encontrar el software ilegal borrado (en el caso planteado).
+
 Solución
 --------
 
