@@ -53,7 +53,8 @@ En este reto aprenderás:
 El objetivo es encontrar la bandera, que es como encontrar el software ilegal borrado (en el caso planteado).
 
 ***
-Todo lo anterior es público para el que quiera resolver el reto.
+Todo lo anterior (Introducción + Reto) es público para el que quiera resolver el reto.
+
 Todo lo que viene a continuación es la solución, y es solo para los organizadores del reto.
 ***
 
@@ -274,7 +275,9 @@ CodeCamp17{7812034DU}
 Notas técnicas
 --------------
 Realmente no es necesario averiguar el offset para montar el fichero ctf.000.raw, ya que se puede usar algo como:
+
 	losetup --partscan /dev/loop0 ctf.000.raw
+	
 No obstante, como el desplazamiento forma parte de la contraseña, al menos se debe echar un ojo a la tabla de particiones.
 
 
