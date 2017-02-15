@@ -3,7 +3,7 @@ Simulación de peritaje
 
 Creador del reto: Virginio García López (virginiogl@cii-murcia.es)
 
-Introducción
+Antecedentes
 ------------
 
 La empresa PIRATILLA ha recibido una denunca por parte de la BSA por piratería. Está usando software Windows con varias suites software sin licencia.
@@ -16,15 +16,11 @@ El perito llega a casa y tiene que montar el disco duro, pero la clonadora lo ha
 
 No hay presupuesto para comparar otro disco de ese tamaño, así que hacer un "cat" de los trozos a otro disco duro no es viable...
 
-No hay problema, el perito que sabe mucho de Linux usa el comando "affuse" para montar los trozos.
+No hay problema, el perito que sabe mucho de Linux usa un comando que empieza por aff... ¿cuál era?
 
-Al montarlo se da cuenta de algo... ¡¡ No hay ficheros !!.
+Al montarlo, el perito se da cuenta de que ¡¡ alguien les ha avisado de la redada !!
 
-Alguien ha advertido de la redada, y lo han borrado todo.
-
-Pero no va a hacer falta recuperar los ficheros borrados. No se han dado cuenta que solamente los han tirado a la papelera de Windows.
-
-Y ellos no saben lo fácil que resulta recupear de la papelera.
+Aunque el perito está seguro de que hay evidencias que se pueden recuperar...
 
 Reto
 ----
@@ -37,25 +33,18 @@ En este caso los trozos son de 1MB.
 
 Para simular el caso, en lugar de usar el comando "cat" para juntar los trozos, el reto consiste en montar los ficheros sin duplicar el espacio. Es decir, coger los ficheros ctf.000 hasta ctf.029 y montarlos directamente.
 
-Debes usar el comando affuse. Si no lo tienes en tu linux, averigua el paquete e instálalo.
+Debes usar el comando que empieza por aff..., pero el perito no recuerda. Tendrás que averiguar también el paquete e instalarlo.
 
 Justo antes de resolver el reto llegarás a un punto en el que te encontrarás con un fichero que necesita contraseña.
 
-La contraseña es la concatenación (sin espacios ni ningún carácter) de:
-- El offset en bytes de la partición donde se encontraban los datos
-- El nombre del fichero que usaste para montar el disco con el comando affuse
-
-En este reto aprenderás:
-- A montar una imagen de disco que se encuentra en trozos, sin duplicar el espacio
-- A montar una partición de disco a partir de su desplazamiento físico
-- La estructura de la papelera de recilaje de Windows, y cómo recuperar ficheros que se encuentran en dicha papelera
+Necesitarás juntar dos cosas: el offset de la partición y el nombre del fichero que montaste con el comando desconocido que sabemos que empieza por aff.
 
 El objetivo es encontrar la bandera, que es como encontrar el software ilegal borrado (en el caso planteado).
 
 ***
-Todo lo anterior (Introducción + Reto) es público para el que quiera resolver el reto.
+Todo lo anterior: Antecedentes + Reto, es público para el que quiera resolver el reto.
 
-Todo lo que viene a continuación es la solución, y es solo para los organizadores del reto.
+Todo lo que viene a continuación es la solución, y es solo para los organizadores del reto (y para ver la solución si no se consigue resolver).
 ***
 
 Solución
@@ -104,7 +93,7 @@ Creamos un directorio para el disco completo:
 
 	mkdir disco
 
-Y lo montamos con el comando affuse:
+Y lo montamos con el comando affuse ¡¡ el comando que no recordaba el perito es affuse !!:
 
 
 	affuse ctf.000 disco/
@@ -148,7 +137,7 @@ Como el enunciado dice que es un Windows, vamos a fijarnos en la partición NTFS
 
 Dice que empieza en 128, y las unidades son sectores de 512 bytes.
 
-Por tanto el desplazamiento en bytes va a ser 128\*512=65536.
+Por tanto el desplazamiento en bytes va a ser 128\*512=65536, y la contraseña tiene puesta esta parte en bytes (esto no se indica, hay que probar).
 
 Ya tenemos la clave que vamos a necesitar más adelante. Será "65536ctf.000.raw".
 
@@ -296,11 +285,13 @@ La estructura de la papelera de reciclaje es real, y lo aprendido puede usarse p
 Pistas
 ------
 
-1. La Papelera de Reciclaje de Windows almacena los nombres de ficheros con el prefijo $I, y el contenido de los ficheros con el prefijo $R. Ambos nombres sin prefijo son iguales.
+1. El comando olvidado por el perito es affuse
 
-2. Monta NTFS en sólo lectura para no tener problemas. La partición NTFS comienza en el sector 128 y el tamaño del sector es el tradicional de los discos duros. 
+2. La contraseña es la concatencación del offset en BYTES junto con el nombre del fichero .raw que se ha montado. Sin espacios ni otros carácteres. La partición NTFS solo se monta en RO.
+
+3. La Papelera de Reciclaje de Windows almacena los nombres de ficheros con el prefijo $I, y el contenido de los ficheros con el prefijo $R. Ambos nombres sin prefijo son iguales.
 
 Epílogo
 -------
 
-El reto está pensado para tener una dificultad media y poder resolverse sin necesidad de pistas. Aunque puede resultar sencillo para un usuario experimentado en Linux, para resolverlo hay que tener cierta habilidad con el manejo de Linux, ya que se hacen tareas como crear un fichero virtual con affuse, montar un fichero a partir de un desplazamiento, o emparejar ficheros con un patrón. Espero que este reto, además de ilustrativo de lo que se podría hacer en un peritaje, resulte divertido de resolver.
+El reto está pensado para tener una dificultad media/alta y poder resolverse sin necesidad de pistas. Aunque puede resultar sencillo para un usuario experimentado en Linux, para resolverlo hay que tener cierta habilidad con el manejo de Linux, ya que se hacen tareas como crear un fichero virtual con affuse, montar un fichero a partir de un desplazamiento, o emparejar ficheros con un patrón. Espero que este reto, además de ilustrativo de lo que se podría hacer en un peritaje, resulte divertido de resolver.
