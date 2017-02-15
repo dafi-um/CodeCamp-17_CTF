@@ -52,7 +52,10 @@ En este reto aprenderás:
 
 El objetivo es encontrar la bandera, que es como encontrar el software ilegal borrado (en el caso planteado).
 
-Hit: affuse
+***
+Todo lo anterior es público para el que quiera resolver el reto.
+Todo lo que viene a continuación es la solución, y es solo para los organizadores del reto.
+***
 
 Solución
 --------
@@ -138,7 +141,7 @@ Vemos lo siguiente:
 	003:  -------   0000055424   0000061439   0000006016   Unallocated
 
 
-Si usamos fdisk, el resultado es equivalente.
+Si usamos fdisk (`fdisk -l ctf.000.raw`), el resultado es equivalente.
 
 Como el enunciado dice que es un Windows, vamos a fijarnos en la partición NTFS.
 
@@ -267,3 +270,34 @@ Y vemos esto:
 CodeCamp17{7812034DU}
 
 **¡ Enhorabuena !**
+
+Notas técnicas
+--------------
+Realmente no es necesario averiguar el offset para montar el fichero ctf.000.raw, ya que se puede usar algo como:
+	losetup --partscan /dev/loop0 ctf.000.raw
+No obstante, como el desplazamiento forma parte de la contraseña, al menos se debe echar un ojo a la tabla de particiones.
+
+
+Al montar el sistema de ficheros NTFS debe hacerse en modo sólo lectura siempre. No solo porque es lo correcto para el análisis forense, sino porque además no se ha desmontado correctamente y va a dar un error. Los que intenten resolver este reto deben darse cuenta de este detalle.
+
+
+La bandera está oculta en un pdf que a su vez se encuentra en un rar cifrado y troceado. ¿Por qué tanta complicación?. Por un lado se ha metido el pdf dentro de un rar cifrado para evitar que con el comando strings se pueda extraer la bandera.
+Y por otro lado el rar se ha cifrado para que si se usa el comando binwalk solo se obtenga un montón de ficheros rar desordenados. Aún en el caso muy improbable de que se consiga ordenarlos, todavía haría falta la clave de descifrado.
+
+
+El hecho de que la clave del rar se obtenga del offset y el nombre del fichero es algo que fuerza a que, por un lado se conozca el comando affuse, y por otro se entienda la tabla de particiones. Lógicamente se podría tomar el atajo de usar el comando cat para juntar los trozos, pero habría que averiguar de otra manera el nombre de fichero que genera el comando affuse.
+
+
+La estructura de la papelera de reciclaje es real, y lo aprendido puede usarse para recuperar una papelera de reciclaje de Windows 7, 8, y 10 en Linux sin ninguna herramienta adicional (simplemente entendiendo cómo funciona la Papelera de Reciclaje de Windows).
+
+Pistas
+------
+
+1. La Papelera de Reciclaje de Windows almacena los nombres de ficheros con el prefijo $I, y el contenido de los ficheros con el prefijo $R. Ambos nombres sin prefijo son iguales.
+
+2. Monta NTFS en sólo lectura para no tener problemas. La partición NTFS comienza en el sector 128 y el tamaño del sector es el tradicional de los discos duros. 
+
+Epílogo
+-------
+
+El reto está pensado para tener una dificultad media y poder resolverse sin necesidad de pistas. Aunque puede resultar sencillo para un usuario experimentado en Linux, para resolverlo hay que tener cierta habilidad con el manejo de Linux, ya que se hacen tareas como crear un fichero virtual con affuse, montar un fichero a partir de un desplazamiento, o emparejar ficheros con un patrón. Espero que este reto, además de ilustrativo de lo que se podría hacer en un peritaje, resulte divertido de resolver.
