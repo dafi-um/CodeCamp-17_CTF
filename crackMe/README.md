@@ -6,7 +6,7 @@ Salt: S0mrIdlZvI
 
 Solucion: **CodeCamp17{a6eb486c9eed9e5d5c0d04c0a814a4ea}**
 
-Hit: Dont crack me :)
+Hint: Dont crack me :)
 
 -------------------------------------------------------
 
