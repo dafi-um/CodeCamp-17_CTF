@@ -6,7 +6,7 @@ Nota: Al admin le gusta el puerto 1911
 
 Solucion: **CodeCamp17{Un_4u7en1Co_Linc3}**
 
-Hit: El valor de las líneas vacías es bien conocido por Alfred Vail
+Hint: El valor de las líneas vacías es bien conocido por Alfred Vail
 
 -------------------------------------------------------
 
